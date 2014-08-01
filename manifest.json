@@ -1,0 +1,18 @@
+{
+  "name": "BroadWorks WebRTC Phone",
+  "short_name": "BroadWorks WebRTC Phone",
+  "version" : "1.1",
+  "description" : "BroadWorks SIP client for Google Chrome\u2122",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "permissions": [ "videoCapture", "audioCapture", "storage" ],
+  "icons": {
+    "16": "images/bsft_logo_16x16.png",
+    "48": "images/bsft_logo_48x48.png",
+    "128": "images/bsft_logo_128x128.png"
+   }
+}

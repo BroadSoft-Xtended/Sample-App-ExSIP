@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>BroadWorks WebRTC Phone</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script src="jquery.js"></script>
+<script src="exsip-devel.js"></script>
+<script src="app.js"></script>
+</head>
+<body>
+	<div style="height: 15px;">
+		<div id="message"></div>
+	</div>
+	<div id="signIn">
+		<table>
+			<tr>
+				<td style="text-align: center;" colspan="2">Please sign-in
+					using your SIP credentials</td>
+			</tr>
+			<tr>
+				<td>WRS:</td>
+				<td><input id="wrsAddress" maxlength="100"
+					placeholder="ws://wrs.domain.com:8060/" />*</td>
+			</tr>
+			<tr>
+				<td>SIP URI:</td>
+				<td><input id="uri" maxlength="100"
+					placeholder="sip:user@domain.com" />*</td>
+			</tr>
+			<tr>
+				<td>Auth User:</td>
+				<td><input id="authUser" maxlength="100" placeholder="username" /></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><input id="password" type="password" maxlength="100"
+					placeholder="password" /></td>
+			</tr>
+			<tr>
+				<td style="text-align: center;" colspan="2"><button
+						id="btnSignIn">Sign In</button>
+					<button id="btnExit">Exit</button></td>
+			</tr>
+		</table>
+	</div>
+	<div id="connecting">
+		<img src="images/connecting.gif" />
+	</div>
+	<div id="toolbar">
+		<table>
+			<tr>
+				<td style="text-align: left;"><span style="font-weight: bold;">Number:
+				</span><input id="tbNumber" placeholder="sip address or DN" maxlength="11" />
+					<img id="btnAudio" src="images/audio.png" class="inactive" /> <img
+					id="btnVideo" src="images/video.png" class="inactive" /><img
+					id="btnAnswer" src="images/audio.png" class="answer" /><img
+					id="btnDecline" src="images/decline.png" class="decline" /></td>
+				<td style="text-align: right;"><a id="btnSignOut" href="#">Sign
+						Out</a></td>
+			</tr>
+		</table>
+	</div>
+	<div id="views">
+		<video id="selfVideo" autoplay muted="true"></video>
+		<video id="remoteVideo" autoplay></video>
+	</div>
+	<div id="footer">BroadWorks WebRTC Phone Copyright &copy; 2014.
+		BroadSoft, Inc. All rights reserved.</div>
+</body>
+</html>

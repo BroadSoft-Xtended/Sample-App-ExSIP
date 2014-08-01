@@ -1,0 +1,134 @@
+body {
+	text-align: center;
+	background-color: #c0c0c0;
+	-webkit-app-region: drag;
+}
+
+button {
+	background-color: #F7A300;
+	color: #ffffff;
+	font-size: 11px;
+	font-weight: bold;
+	width: 80px;
+	height: 26px;
+	border: none;
+}
+
+button:hover {
+	background-color: #F2B36C;
+}
+
+#footer {
+	font-size: 9px;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	margin-bottom: 2px;
+}
+
+#message {
+	font-size: 11px;
+}
+
+#signIn table {
+	margin-left: auto;
+	margin-right: auto;
+	-webkit-app-region: no-drag;
+}
+
+#signIn table tr td {
+	font-weight: bold;
+	font-size: 11px;
+}
+
+#signIn table tr td input {
+	font-size: 11px;
+	width: 200px;
+}
+
+#views {
+	width: 320px;
+	height: 240px;
+	display: none;
+}
+
+#selfVideo {
+	float: left;
+	position: relative;
+	width: 64px;
+	height: 40px;
+	z-index: 2;
+}
+
+#remoteVideo {
+	float: left;
+	position: relative;
+	top: -42px;
+	width: 320px;
+	height: 240px;
+	z-index: 1;
+}
+
+#toolbar {
+	width: 320px;
+	text-align: center;
+	margin-bottom: 2px;
+	display: none;
+	-webkit-app-region: no-drag;
+}
+
+#toolbar img {
+	vertical-align: middle;
+	margin: 1px;
+}
+
+#toolbar input {
+	vertical-align: middle;
+	font-size: 11px;
+}
+
+#toolbar span {
+	vertical-align: middle;
+}
+
+#toolbar table {
+	width: 100%;
+}
+
+#toolbar table tr td {
+	font-size: 11px;
+}
+
+#btnSignOut {
+	color: #333333;
+}
+
+.active {
+	background-color: #F7A300;
+}
+
+.inactive {
+	background-color: transparent;
+}
+
+.inactive:hover {
+	background-color: #e0e0e0;
+}
+
+.hangup {
+	background-color: #ff0000;
+}
+
+.answer {
+	background-color: #00ff00;
+}
+
+.decline {
+	background-color: #ff0000;
+}
+
+#connecting {
+	display: none;
+}
